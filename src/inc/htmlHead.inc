@@ -8,6 +8,10 @@
     <link href="//cdn.muicss.com/mui-0.9.26/css/mui.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/master.css">
     <script src="//cdn.muicss.com/mui-0.9.26/js/mui.min.js"></script>
+    <script type="text/javascript" src="lib/js-parsons/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+
+    </script>
   </head>
   <body>
     <header class="mui-appbar mui--z1">
