@@ -2168,7 +2168,8 @@ header a {
 /**
  * Content CSS
  */
-#content-wrapper {
+.landingpage > #content-wrapper,
+.create > #content-wrapper {
   min-height: 100%;
   padding-left: 50px;
   padding-right: 50px;
@@ -2191,7 +2192,7 @@ header a {
   -o-background-size: cover;
   background-size: cover; }
 
-.mui--text-display3, .mui--text-display1, h1 {
+.create .mui--text-display3, .create .mui--text-display1, .create h1, .landingpage .mui--text-display3, .landingpage .mui--text-display1, .landingpage h1 {
   color: white; }
 
 .mui-textfield-long > textarea {
@@ -2200,11 +2201,20 @@ header a {
 .mui-textfield > input {
   color: white; }
 
-#link-input {
+#link-input,
+#embed-ta {
   width: 300px;
   margin-left: 50%;
   position: relative;
   left: -150px; }
+
+.code {
+  font-family: Monospace; }
+  .code textarea, .code input {
+    font-size: 11pt; }
+
+#yourErrors {
+  margin: 10px 100px; }
 
 /**
  * Footer CSS

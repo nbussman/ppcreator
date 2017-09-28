@@ -112,7 +112,3 @@ li.correctPosition, .testcase.pass {
     display: block;
     color: red;
 }
-#newInstanceLink, #feedbackLink {
-    padding: 20px;
-    font-size: 130%;
-}

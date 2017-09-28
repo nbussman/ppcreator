@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD/hAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREQAREREREREQAAERERERERAAAREREREREQARERERERAAAAABEREREAAAAAEREQAQAAARAREQAAAAARERERAAAAABEREREQAQAAARARERERAAAAABEREREAAAAAEREREREQAREREREREQAAERERERERAAAREREREREQAREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
     <link href="//cdn.muicss.com/mui-0.9.26/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="lib/js-parsons/parsons.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/master.css">
     <script src="//cdn.muicss.com/mui-0.9.26/js/mui.min.js"></script>
     <script type="text/javascript" src="lib/js-parsons/lib/jquery.min.js"></script>
@@ -18,12 +19,12 @@
       <div class="mui-container">
         <table width="100%">
           <tr class="mui--appbar-height">
-            <td class="mui--text-title"><a href="index.php">PPCreator</a></td>
+            <td class="mui--text-title"><?=$title ?></td>
             <td align="right">
-              <ul class="mui-list--inline mui--text-body2">
-                <li><a href="#">how</a></li>
-                <li><a href="create.php">create</a></li>
-              </ul>
+              <div>
+                  <button class="mui-btn" id="feedbackLink">Check</button>
+                  <button class="mui-btn mui-btn--danger" id="newInstanceLink">Clear</button>
+              </div>
             </td>
           </tr>
         </table>
