@@ -27,7 +27,7 @@
   if($found == false) exit();
   require "inc/htmlHeadShow.inc";
 ?>
-      <div id="content-wrapper" class="show mui--text-center">
+      <div id="content-wrapper" class="">
         <div class="mui--appbar-height"></div>
         <br>
         <table>
@@ -82,6 +82,10 @@
               $code = explode("\n", $sourcecode);
               foreach( $code as $zeile )
                 $formatedSourceCode .= str_replace(array("\r", "\n"), '', $zeile) .'\n';
+
+              $forgingCode = explode("\n", $forgingline);
+              foreach( $forgingCode as $zeile )
+                $formatedSourceCode .= str_replace(array("\r", "\n"), '', $zeile) .'#distractor \n';
               $formatedSourceCode = trim(htmlspecialchars($formatedSourceCode));
             ?>
             var initial = '<?= $formatedSourceCode ?>';
@@ -100,7 +104,7 @@
                 var fb = parson.getFeedback();
 
                 if (fb.length <= 0) {
-                  $("#yourErrors").html("");
+                  $("#yourErrors").html("").slideUp();
                   alert("Super! Du hast die Fragmente richtig angeordnet.");
                 }
                 else {

@@ -2168,8 +2168,7 @@ header a {
 /**
  * Content CSS
  */
-.landingpage > #content-wrapper,
-.create > #content-wrapper {
+.landingpage#content-wrapper, .create#content-wrapper {
   min-height: 100%;
   padding-left: 50px;
   padding-right: 50px;

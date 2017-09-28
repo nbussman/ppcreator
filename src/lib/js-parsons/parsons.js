@@ -44,11 +44,11 @@
        trash_label: 'Ziehe die Fragmente ...',
        solution_label: '... hierhin, um die Lösung zu konstruieren.',
        order: function() {
-         return "Die Codefragemente sind falsch oder in der falschen Reihenfolge. Entferne, verschiebe oder ersetzte die markierte Fragmente.";},
+         return "Die Codefragemente sind falsch oder in der falschen Reihenfolge. Entferne, verschiebe oder ersetzte die markierten Fragmente. ";},
        lines_missing: function() {
-         return "Deine Programm hat zu wenig Fragmente.";},
+         return "Dein Programm hat zu wenig Fragmente.";},
        lines_too_many: function() {
-         return "Deine Programm hat zu viele Fragmente.";},
+         return "Dein Programm hat zu viele Fragmente.";},
        no_matching: function(lineNro) {
          return "Das markierte Fragment (" + lineNro + ") nicht korrekt eingerückt."; },
        no_matching_open: function(lineNro, block) {
