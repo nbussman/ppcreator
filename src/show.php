@@ -22,9 +22,13 @@
 
   }
   else {
+    header('Location: index.php');
     exit();
   }
-  if($found == false) exit();
+  if($found == false){
+    header('Location: index.php');
+    exit();
+  }
   require "inc/htmlHeadShow.inc";
 ?>
       <div id="content-wrapper" class="">

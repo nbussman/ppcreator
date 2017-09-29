@@ -21,7 +21,7 @@
             <td class="mui--text-title"><a href="index.php">PPCreator</a></td>
             <td align="right">
               <ul class="mui-list--inline mui--text-body2">
-                <li><a href="#">how</a></li>
+                <li><a href="https://youtube.com/">how</a></li>
                 <li><a href="create.php">create</a></li>
               </ul>
             </td>

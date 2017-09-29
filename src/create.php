@@ -41,15 +41,15 @@
       <div class="mui--text-light">
         <br><br><br>
         This url belongs to your puzzle:<br>
-        <div id="link-input" class="mui-textfield code">
-          <input type="text" value="<?=$url ?>" readonly="readonly" >
+        <div id="link-input" class="copyable mui-textfield code">
+          <input class="copyable" type="text" value="<?=$url ?>" readonly="readonly" >
         </div>
         <br><br>
         <div class="mui--text--display1">
           <strong>Embed</strong>
         </div>
         <div id="embed-ta" class="mui-textfield mui-textfield-long code ">
-          <textarea name="embed" readonly="readonly" class="code">
+          <textarea class="copyable" name="embed" readonly="readonly" class="code">
 <iframe src="<?=$url ?>" style="border:0px #FFFFFF none;" name="parsons puzzle" scrolling="yes" frameborder="0" align=aus marginheight="0px" marginwidth="0px" height="800" width="1024"></iframe>
           </textarea>
         </div>
@@ -70,16 +70,16 @@
           <input type="text" name="title" placeholder="Title" required>
         </div>
         <div class="mui-textfield">
-          <textarea placeholder="Description" name="description" required></textarea>
+          <textarea class="tabAllowed" placeholder="Description" name="description" required></textarea>
         </div>
         <div class="mui-textfield">
           <input type="text" name="imgurl" placeholder="Imageurl http://....">
         </div>
         <div class="mui-textfield mui-textfield-long code">
-          <textarea name="sourcecode" placeholder="Sourcecode (linewise)" required></textarea>
+          <textarea class="tabAllowed"  name="sourcecode" placeholder="Sourcecode (linewise)" required></textarea>
         </div>
         <div class="mui-textfield code">
-          <textarea name="wronglines" placeholder="Wrong lines (to force decisions)"></textarea>
+          <textarea class="tabAllowed"  name="wronglines" placeholder="Wrong lines (to force decisions)"></textarea>
         </div>
         <div class="mui--text-light">
           By creating the puzzle I agree that this puzzles is publishished under this <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"> creative common license <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>.<br> <em>We do not collect any personal data from you or your students.</em>

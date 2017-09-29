@@ -1,8 +1,7 @@
 <?php
-$mysqlusername = "root";
-$mysqlpassword = "";
-$mysqlhostname = "localhost";
-$mysqldb = "ppuzzle";
+
+require "config.inc.php";
+
 //connection to the database
 $conn = new mysqli($mysqlhostname, $mysqlusername, $mysqlpassword, $mysqldb);
 if ($conn->connect_error) {
