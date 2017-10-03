@@ -1,8 +1,10 @@
 /** Stylesheet for the puzzles */
-body {
-  padding: 0 40px;
-}
 
+@media screen and (min-width: 800px) {
+  body {
+    padding: 0 40px;
+  }
+}
 .sortable-code {
     position: static;
     padding-left: 0px;

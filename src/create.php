@@ -74,7 +74,9 @@
         </div>
         <div class="mui-textfield">
           <input type="text" name="imgurl" placeholder="Imageurl http://....">
+          <a href="https://postimages.org" class="mui-btn mui-btn--small mui-btn--primary mui-btn--flat" target="_blank"> Upload an image </a>
         </div>
+
         <div class="mui-textfield mui-textfield-long code">
           <textarea class="tabAllowed"  name="sourcecode" placeholder="Sourcecode (linewise)" required></textarea>
         </div>
