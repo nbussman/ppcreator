@@ -21,7 +21,7 @@
   if(!empty($_POST['title']) && !empty($_POST['description']) && !empty($_POST['sourcecode'])) {
     if (!empty($_POST['imgurl'])) $imgurl = $_POST['imgurl'];
       else   $imgurl = "";
-    if (!empty($_POST['imgurl'])) $wronglines = $_POST['wronglines'];
+    if (!empty($_POST['wronglines'])) $wronglines = $_POST['wronglines'];
       else   $wronglines = "";
     $sql = "INSERT INTO `puzzles` (`title`, `description`, `imagepath`, `sourcecode`, `forginglines`)
      VALUES  ('".$conn->real_escape_string($_POST['title'])."','"
